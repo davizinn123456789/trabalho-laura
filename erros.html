@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatar Incidente</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="inicio.html" class="logo-link">Bananas Políticas</a>
+        <a href="sobrenos.html" class="btn-sobre">Sobre nós</a>
+    </header>
+
+    <main class="form-container">
+        <h2>Relatar Incidente</h2>
+        <form action="pagina4.html">
+            <label>Primeiro nome:</label>
+            <input type="text">
+            
+            <label>Endereço:</label>
+            <input type="text">
+
+            <label>Data do incidente:</label>
+            <input type="date">
+
+            <label>Tipo de incidente:</label>
+            <select>
+                <option>Perda de prazo processual</option>
+                <option>Erro documental</option>
+                <option>Falha de comunicação</option>
+                <option>Vazamento de informação</option>
+            </select>
+
+            <label>Nível de gravidade:</label>
+            <select>
+                <option>Baixo</option>
+                <option>Médio</option>
+                <option>Alto</option>
+                <option>Crítico</option>
+            </select>
+
+            <label>Descrição:</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit" class="btn-finalizar">Finalizar Relato</button>
+        </form>
+    </main>
+        <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            background: #f4f6f9; 
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #5b5b5b;
+            padding: 15px 30px;
+        }
+
+        .logo-link { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 20px; 
+        }
+
+        .btn-sobre { 
+            color: white; 
+            text-decoration: none; 
+            background: #444; 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+        }
+
+        .form-container {
+            background: #b1afaf;
+            width: 90%;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        label { 
+            display: block; 
+            margin-top: 15px; 
+            font-weight: bold; 
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #999;
+            box-sizing: border-box;
+        }
+        
+        .btn-finalizar {
+            display: block;
+            background: #454348;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+    </style>
+</body>
+</html>
